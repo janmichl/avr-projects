@@ -2,16 +2,6 @@
 #ifndef LCD_H
 #define LCD_H
 
-// LCD defines
-#define LCDMaxLines 2
-#define LCDMaxChars 16
-#define LineOne     0x80
-#define LineTwo     0xc0
-#define BlankSpace  ' '
-
-#include "macros.h"
-#include "harddef.h"
-
 void commandLCD(uint8_t command)
 {
 	PORT(LCD_RSPORT) &= ~(1 << LCD_RS);

@@ -8,6 +8,12 @@
 #define LCD_E      1
 #define LCD_EPORT  B
 #define LCD_DPORT  A
+// other LCD defines
+#define LCDMaxLines 2
+#define LCDMaxChars 16
+#define LineOne     0x80
+#define LineTwo     0xc0
+#define BlankSpace  ' '
 
 //defines I2C
 #define I2C_SDAPORT D
